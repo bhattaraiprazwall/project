@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: url(../logo-image/blur.avif) no-repeat;
+    background-size: cover;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.user--login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    /* background-color: rgba(9, 141, 242, 0.86);  */
+    border: 2px solid white;
+    border-radius: 12px;
+    height: 60vh;
+    width: 65vh;
+}
+
+.user--login ::placeholder{
+    color: white ;
+    opacity: 1;
+    font-weight: bold;
+}
+/* .user--login--img{
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+
+} */
+
+.user--login label{
+    display: inline-flex;
+    width: 40px;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+.user--em{
+    color: white    ;
+    margin-left: 90px;
+    margin:20px;
+    padding:15px;
+    border: 2px solid white;
+    background: inherit;
+    border-radius: 50px;
+    width: 50vh;
+
+}
+
+.user--login h1{
+    color: white;
+    
+}
+
+.login--btn{
+    margin-top:15px ;
+    height: 6vh;
+    width: 55vh;
+    background-color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    /* border-color: yellow; */
+}
+.login--btn:hover{
+    background-color: yellow;
+    cursor: pointer;
+    
+}
+form{
+    backdrop-filter: blur(5px);
+    /* position: absolute; */
+}
+
+.err--msg{
+    display: block;
+    text-align: center;
+    color: red;
+    gap: 5px;
+}
+.below--pass--wrapper{
+    display: flex;
+    gap: 120px;
+}
+
+.user--login a{
+    text-decoration: none;
+
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-toggle-icon i {
+    font-size: 18px;
+    line-height: 1;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .password-toggle-icon i:hover {
+    color: #000;
+  }

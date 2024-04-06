@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap);
+.sec--nav--menu{
+    height: 10vh;
+    background-color: goldenrod;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif   ;    */
+}
+.sec--nav--menu .nav--menu{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    border: 3px solid yellow;
+    justify-content: center;
+    height: 10vh;
+    align-items: center; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+
+}
+.sec--nav--menu .nav--menu li{
+    padding: 5px;
+    border-radius:5px ;
+    font-size: 3vh;
+    font-weight: bold;
+}
+.nav--menu .active{
+    text-decoration: underline;
+}
+.sec--nav--menu .nav--menu a:hover{
+    color:red;
+}
+.nav--menu a{
+    text-decoration: none;
+    padding: 5px;
+}
