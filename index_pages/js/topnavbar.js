@@ -4,7 +4,7 @@ function toggleSidebar() {
 }
 
 function closeSidebar() {
-    var sidebar = document.getElementById('sidebar');
+    var sidebar = document.getElementsByClassName('close-button');
     sidebar.style.right = '-20%';
 }
 
