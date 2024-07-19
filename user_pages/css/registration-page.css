@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap);
-.reg--body{
+
+.reg--body {
     font-family: "Trirong", serif;
-    display:  flex;
+    display: flex;
     justify-content: center;
     background-color: #FFAC1C;
     background-size: cover;
@@ -9,32 +10,36 @@
 
 
 
-.main--section .user--reg{
+.main--section .user--reg {
     margin: 0;
     font-size: 35px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-.para{
+
+.para {
     text-align: center;
-    margin:10px 0px 50px 0px;
+    margin: 10px 0px 50px 0px;
 }
+
 .form {
     display: flex;
     flex-direction: column;
     height: max-content;
-    margin:20px;
+    margin: 20px;
     padding: 10px;
     width: 100%;
-    border-radius:20px;
+    border-radius: 20px;
     background: white;
-    
+
 }
-.main--section label ,input{
+
+.main--section label,
+input {
     margin: 20px;
 }
 
-.user-register{
+.user-register {
     padding: 8px;
     border-color: blueviolet;
     font-size: 2vh;
@@ -43,14 +48,14 @@
     width: 50vh;
 }
 
-.user-lbl{
+.user-lbl {
     width: 130px;
     display: inline-flex;
     color: black;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
-.submit{
+.submit {
     margin-top: 50px;
     margin-bottom: 0;
     height: 5vh;
@@ -63,11 +68,22 @@
     justify-content: center;
 }
 
-.login--redirect{
+.login--redirect {
     text-align: center;
 }
-.sign--up--wrap{
+
+.sign--up--wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+    .reg--body {
+        background-color: lightgreen;
+        font-family: "Trirong", serif;
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+    }
 }

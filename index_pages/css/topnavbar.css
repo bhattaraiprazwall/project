@@ -1,15 +1,4 @@
-/* *{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-} */
-
-/* body {
-  font-family: sans-serif;
-} */
-.header {
+  .header {
   background: linear-gradient(175deg, #f8f9fa, #f1f3f5, #edf2ff);
 }
 .header-wrap {
@@ -125,22 +114,101 @@ a.main-logo.link {
 }
 
 .sidebar {
-  background-color: #f4f4f4;
+  background-color: black;
   position: fixed;
   top: 0;
-  right: -20%; /* Initially hide the sidebar off-screen */
-  width: 20%;
+  right: -30%; /* Initially hide the sidebar off-screen */
+  width: 25%;
   height: 100%;
   transition: right 0.3s ease-in-out; /* Add transition for smooth sliding effect */
   z-index: 999;
+  height: calc(115vh - 130px); /* Adjust this value as needed */
+  overflow-y: auto;
+  padding: 5px 5px 5px 8px;
+  
 }
 
 .close-button {
+  display: block;
   position: absolute;
   top: 10px;
   right: 10px;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+/* sidebar items listing */
+
+.cart--lists--cart{
+margin: 5px;
+display: inline-block;
+color: white;
+}
+
+.delete--cart--item{
+
+}
+
+.cart--lists--cart-item{
+  /* background-color: #40f08a; */
+  
+  border-bottom: 2px solid white;
+  display: block;
+  padding: 3px;
+}
+.cart--inside--image{
+  height: 15%;
+  width: 30%;
+  margin-left: 20px;
+}
+.cart--lists--cart .cart--details{
+  flex: 1;
+  display: inline-block;
+}
+
+.check
+{
+  border: 3px solid green;
+  width: 100%;
+  height: vh;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+
+}
+
+.view{
+  color: white;
+  border: 3px solid green;
+  width: 90%;
+  height: 5vh;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+
+  
+}
+
+.check--view{
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+}
+
+.sub_total{
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+  line-height: 10vh;
+  margin: 5px 0 0 0 ;
 }
 
 

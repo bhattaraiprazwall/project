@@ -1,11 +1,11 @@
 function toggleSidebar() {
     var sidebar = document.getElementById('sidebar');
-    sidebar.style.right = sidebar.style.right === '0%' ? '-20%' : '0%';
+    sidebar.style.right = sidebar.style.right === '0%' ? '-30%' : '0%';
 }
 
 function closeSidebar() {
-    var sidebar = document.getElementsByClassName('close-button');
-    sidebar.style.right = '-20%';
+    var sidebar = document.getElementById('sidebar');
+    sidebar.style.right = '-30%';
 }
 
 document.addEventListener('keydown', function(event) {

@@ -36,19 +36,77 @@
           <a href="/project/user_pages/php/registration-page.php" class="btn btn--sm btn--full">Sign Up</a>
         </div>
         <div class="cart--logo" onclick="toggleSidebar()">
-          <a href="#"><p><i class="fa fa-shopping-cart"></i> My cart</p></a>
-          <!-- Sidebar starts here -->
-          <div id="sidebar" class="sidebar">
-            <!-- Close button -->
-            <button class="close-button" onclick="closeSidebar()">Close</button>
-            <!-- Sidebar content (cart items, checkout button, etc.) -->
-            <p>Cart items.</p>
-          </div>
-          <!-- Sidebar ends here -->
+          <a href="#">
+            <p><i class="fa fa-shopping-cart"></i> My cart</p>
+          </a>
         </div>
       </nav>
     </div>
   </header>
+  <!-- Sidebar starts here -->
+  <div id="sidebar" class="sidebar">
+    <!-- Close button -->
+    <button class="fa fa-close close-button" onclick="closeSidebar()">Close</button>
+    <!-- Sidebar content (cart items, checkout button, etc.) -->
+    <div class="cart--lists--cart">
+      <?php
+      include ('database_connection.php');
+      if (isset($_POST['btnDelete'])) {
+        $item_id = $_POST['id'];
+        $deleteQuery = "DELETE FROM cart WHERE id = $item_id";
+        if (mysqli_query($conn, $deleteQuery)) {
+          // Data deleted successfully
+          // echo "<script>alert('Item deleted successfully!')</script>";
+          // You may choose to redirect or refresh the page after deletion
+          // header("Location: admin_dashboard.php");
+          // exit();
+        } else {
+          echo "Error deleting user: " . mysqli_error($connection);
+        }
+      }
+      $select_product = 'SELECT *FROM cart';
+      $result = mysqli_query($conn, $select_product);
+      $sum_query = "SELECT SUM(price) AS total_price FROM cart";
+      $sum_result = mysqli_query($conn, $sum_query);
+      $row = mysqli_fetch_assoc($sum_result);
+      $total_price = $row['total_price'];
+
+      try {
+        if (mysqli_num_rows($result) > 0) {
+          while ($row = $result->fetch_assoc()) {
+            echo '
+            <div class="cart--lists--cart-item">
+              <img src="../uploaded_images/' . $row['thumb'] . '" class="cart--inside--image" />
+              <div class="cart--details">
+                <p>' . $row['product_name'] . '</p>
+                <p>' . 'Rs ' . $row['price'] . '</p>
+                <form action="" method="POST">
+                  <input type="hidden" name="id" value="' . $row['id'] . '" />
+                  <input type="submit" name="btnDelete" value="Delete" class="delete--cart--item"/>
+                </form>
+              </div>
+            </div>';
+          }
+          echo '<div class="sub_total">Subtotal: Rs ' . $total_price . '</div>';
+        } else {
+          echo 'Cart is Empty';
+        }
+      } catch (Exception $ex) {
+        die('Database Error:' . $ex->getMessage());
+      }
+      ?>
+    </div>
+    <div class="check--view">
+      <div class="check">
+        <a href="#" class="checkout-button">Checkout</a>
+      </div>
+      <div class="view">
+        <a href="#" class="view-button">View Cart</a>
+      </div>
+    </div>
+  </div>
+  <!-- Sidebar ends here -->
+
   <script src="../js/topnavbar.js"></script>
 </body>
 

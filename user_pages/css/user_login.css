@@ -109,3 +109,9 @@ form{
   .password-toggle-icon i:hover {
     color: #000;
   }
+
+  .user--login--error{
+    /* background-color: red; */
+    color: red;
+    font-size: 20px;
+  }

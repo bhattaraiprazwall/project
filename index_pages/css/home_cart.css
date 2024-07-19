@@ -52,6 +52,10 @@ body{
     /* width: 18px; */
     border: inset 2px solid #00000053;
 }
+.cart--buy{
+    text-decoration: none;
+
+}
 
 .cart--desc, .cart_lists{
     display: flex;
