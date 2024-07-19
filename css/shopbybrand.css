@@ -1,0 +1,16 @@
+.container-md1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.logo-grid img {
+    width: 100%;
+    height: auto;
+}

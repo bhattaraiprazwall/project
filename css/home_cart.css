@@ -1,0 +1,108 @@
+.card--img{
+    background-size: contain;
+    line-height: 2;
+    height: 150px;
+    display: block;
+    mix-blend-mode: multiply;
+    max-width: 100%;
+}
+/* new card css */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 220px;
+    margin: 5px 10px 5px 16px;
+    text-align: center;
+    /* font-family:'Courier New', Courier, monospace; */
+    transition: transform 0.3s ease;
+    max-height: auto;
+  }
+  .card:hover{
+    transform: translateY(-5px);
+    /* transform: rotate(3deg); */
+    /* transform: scale(1.1); */
+    /* border: 1px solid #ff0000; */
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    /* background-color: ffffff0; */
+    background: none;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 18px;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  }
+  
+.card button:hover {
+    opacity: 0.7;
+  }
+.card--wrapper {
+    display: inline-flex;
+}
+.card--items .image--section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pro--name{
+  color: orangered;
+  text-transform: uppercase;
+
+}
+
+.btn--cart{
+  display: inline-flex;
+  justify-content: space-between;
+  /* float: inline-end; */
+}
+.fa-heart-o,.fa-shopping-bag{
+  color:black ;
+}
+#btn--bag{
+  float: inline-end;
+}
+#btn--heart{
+  float: inline-start;
+}
+
+/* css conditions if the item is sold out */
+.sold-out {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.image--section {
+    position: relative;
+}
+.card--img.sold-out-image {
+    opacity: 0.5;
+}
+ /* up to here */
+
+
+ #search-context{
+  background-color: red;
+  display: block;
+  margin: 0px 0px 15px 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+ }

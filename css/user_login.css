@@ -1,0 +1,63 @@
+#user--login--body #user--form {
+    background-color: #fff;
+    width: 350px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user--login {
+    text-align: center;
+}
+
+.user--login h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user--em {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.err--msg {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.below--pass--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.login--btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login--btn:hover {
+    background-color: #0056b3;
+}
+
+.below--pass1 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.below--pass1 a:hover {
+    text-decoration: underline;
+}

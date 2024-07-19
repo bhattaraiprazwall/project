@@ -1,0 +1,83 @@
+.product--form{
+  margin-left: 500px;
+}
+
+.product--form h2{
+  margin: 10px 0 5px 0;
+  color: firebrick;
+  border: 2px solid gold;
+  width: 30vh;
+  text-transform: uppercase;
+  padding: 5px;
+  background-color: aqua;
+  border-radius: 8px;
+}
+}
+
+.add--pro {
+  display: flex;
+  justify-content: center;
+  background: url(image.png);
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  width: 70;
+  
+}
+
+.add--product--form {
+  border: 2px solid white;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 15px;
+  height: 70vh;
+  width: 90vh;
+  background: gray;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background: url(image1.png);
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  padding: 10px;
+
+}
+
+.lbl--product {
+  width: 150px;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+
+.txt--product {
+  display: inline-flex;
+  padding: 5px;
+  font-size: 2vh;
+  border-radius: 3px;
+  /* margin: 3px; */
+  border-color: red;
+}
+
+.err_pro {
+  color: red;
+  font-size: 30px;
+}
+
+.error {
+  color: red;
+}
+
+.add--submit{
+  height: 5vh;
+  width: max-content;
+  background-color: black;
+  color: white;
+  box-shadow: 3px 3px red;
+  cursor: pointer;
+}
+
+.product--form{
+  /* float: right; */
+  max-width: -50%;
+}

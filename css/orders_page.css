@@ -1,0 +1,67 @@
+ #orders--tbl {
+     margin-left: 45vh;
+     margin-top: 0px;
+     margin-bottom: 20px;
+ }
+
+ .orders--head th {
+     background-color: white;
+     line-height: 5px;
+     /* display: inline-flex; */
+     padding: 20px;
+     /* margin-right: 20px; */
+ }
+
+ .orders--head th:last-child {
+     margin-right: 0;
+     /* Remove margin from the last <th> element */
+ }
+
+ table,
+ th,
+ td,
+ tr {
+     border: 1px solid #ddd;
+     border-collapse: collapse;
+ }
+
+ td {
+     padding: 10px;
+ }
+
+ .orders--heading {
+     margin-left: 420px;
+     border: none;
+     background-color: aqua;
+     width: 125vh;
+     padding: 10px;
+ }
+
+     #confirm,#reject,#delivered{
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     padding: 8px 15px;
+     cursor: pointer;
+     /* width: 50%; */
+     /* font-size: 16px; */
+     text-decoration: none;
+ }
+ #delivered:hover{
+    background-color: #3755cc;
+ }
+
+ #reject {
+     background-color: red;
+ }
+
+ #reject:hover {
+     background-color: rgb(188, 52, 52);
+ }
+ #confirm{
+    background-color: #1fe053;
+ }
+ #confirm:hover{
+    background-color: #2cb050;
+ }
